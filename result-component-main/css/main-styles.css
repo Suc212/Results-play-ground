@@ -6,6 +6,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+  /* font: 'hanken grotesk', san-serif; */
 }
 
 .wrapper {
@@ -15,6 +16,7 @@ body {
   overflow: hidden;
   max-width: 550px;
   width: 100%;
+  box-shadow: 10px 10px 64px 0px rgba(0,0,0,0.27);
 }
 
 .wrapper>section {
@@ -73,16 +75,43 @@ body {
 
 .wrapper .summary-panel {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
+  text-transform: capitalize;
+  gap: 0.4rem;
 }
 
-.wrapper .summary-panel>section{
-  display: flex; 
+.wrapper .summary-panel>section {
+  font-weight: 600;
+  display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border-radius: 1rem;
-  width: 80%;
+  border-radius: 0.5rem;
+  width: 80%
+  
+
+}
+
+
+section .summary {
+  font-weight: 700;
+  display: flex;
+  margin-bottom: 1rem;
+  display: flex;
+  padding-right: 7.5rem;
+  
+  
+}
+
+.wrapper .summary-panel>section p {
+  color: var(--dark-gray-blue) !important;
+  letter-spacing: 1px;
+
+}
+
+.wrapper .summary-panel>section p,
+span {
+  color: var(--light-lavender);
 }
 
 /* .wrapper .summary-panel>section, p {
@@ -98,23 +127,36 @@ body {
 .wrapper .summary-panel .first {
   background-color: var(--light-red-bg);
   color: var(--light-red);
-  
+
 }
 
 .wrapper .summary-panel .second {
   background-color: var(--orangey-yellow-bg);
   color: var(--orangey-yellow);
-  
+
 }
 
 .wrapper .summary-panel .third {
   background-color: var(--green-teal-bg);
   color: var(--green-teal);
-  
+
 }
 
 .wrapper .summary-panel .fourth {
   background-color: var(--cobalt-blue-bg);
   color: var(--cobalt-blue);
-  
+
+}
+
+.wrapper .summary-panel button {
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  text-transform: capitalize;
+  margin-top: 1rem;
 }
