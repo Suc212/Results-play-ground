@@ -75,3 +75,13 @@ body {
 
 .wrapper .summary-panel {
 }
+
+.wrapper .summary-panel > section {
+display: flex;
+padding:1rem;
+border-radius: 1rem;
+}
+
+.wrapper .summary-panel .first {
+  background-color: var(--light-red-bg);
+}
